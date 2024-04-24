@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-family: Poppins, sans-serif;
+	scroll-behavior: smooth;
+}
+
+.custom-container {
+	max-width: 80%;
+	margin-inline: auto;
+}
+
+:root {
+	--theme-clr: #7bbcb0;
+	--light-theme-clr: #7bbcb04d;
+	--neutral-black-clr: #292d32;
+	--text-clr: #313131;
+	--white-clr: #fffafa;
+}
+
+.ImageGallery .splide {
+	padding: 0 !important;
+	border-radius: 1rem !important;
+	overflow: hidden !important;
+}
+
+@media (width < 720px) {
+	.custom-container {
+		max-width: 95%;
+		margin-inline: auto;
+		/* padding: 0.5rem; */
+	}
+}

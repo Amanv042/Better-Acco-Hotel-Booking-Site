@@ -1,0 +1,21 @@
+@media (width < 1450px) {
+	.justHere {
+		display: none;
+	}
+	.bannerContainer {
+		grid-template-columns: 1fr 1fr !important;
+		place-items: center !important;
+		padding: 0 3rem;
+	}
+	.bannerContainer .content {
+		margin: 0 !important;
+	}
+	.bannerContainer img {
+		display: none;
+	}
+}
+@media (width < 1000px) {
+	.bannerContainer {
+		grid-template-columns: 1fr !important;
+	}
+}

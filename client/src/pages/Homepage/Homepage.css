@@ -1,0 +1,60 @@
+.heroSlider .carousel2 {
+	display: grid;
+	place-items: center;
+	position: relative;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.heroSlider .carousel2 .swiper {
+	border-radius: 1rem;
+	width: 100%;
+	height: 500px;
+	position: static;
+}
+.heroSlider .carousel2 .swiper-button-prev {
+	position: absolute;
+	left: -25px;
+	background: white;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	color: rgb(163, 163, 163);
+	height: 50px;
+	width: 50px;
+	border-radius: 100vh;
+}
+.heroSlider .carousel2 .swiper-button-next {
+	position: absolute;
+	right: -25px;
+	background: white;
+	color: rgb(163, 163, 163);
+	height: 50px;
+	width: 50px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 100vh;
+}
+
+.heroSlider .carousel2 .swiper-button-prev::after {
+	content: "⮜";
+}
+.heroSlider .carousel2 .swiper-button-next::after {
+	content: "⮞";
+}
+
+.heroSlider .carousel2 .swiper-slide {
+	/* text-align: center; */
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.heroSlider .carousel2 .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

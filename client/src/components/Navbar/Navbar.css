@@ -1,0 +1,26 @@
+.header-navLinks a {
+	border-radius: 100vh;
+	outline: none !important;
+	transition: all 200ms ease-in-out;
+}
+.header-navLinks a:hover,
+.header-navLinks a.active {
+	color: black;
+	background: var(--light-theme-clr);
+}
+.header-navLinks a {
+	padding: 0.5rem 1rem;
+}
+
+.responsiveNavbar {
+	display: none !important;
+}
+
+@media (width < 1300px) {
+	.responsiveNavbar {
+		display: block !important;
+	}
+	.header-navLinks {
+		display: none !important;
+	}
+}

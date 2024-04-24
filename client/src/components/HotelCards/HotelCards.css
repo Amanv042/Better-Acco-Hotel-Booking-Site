@@ -1,0 +1,30 @@
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+.price{
+    font-size: 1.6em;
+}
+.card-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.title-location{
+    margin-top: 1rem;
+    max-width: 60%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: start;
+    font-size:1.1em ;
+}
+
+.furthur-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

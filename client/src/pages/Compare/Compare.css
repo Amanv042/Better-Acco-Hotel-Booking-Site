@@ -1,0 +1,22 @@
+.compare-list {
+	transform-origin: top;
+	transform: scaleY(0);
+	opacity: 0;
+	transition: transform 250ms ease-in-out, opacity 200ms ease-in-out;
+}
+.compare-input {
+	border-radius: 100vh;
+	transition: transform 250ms ease-in-out, opacity 200ms ease-in-out;
+}
+.compare-input:focus-within {
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.compare-input:focus-within + .compare-list {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	opacity: 1;
+	transform: scaleY(1);
+}
